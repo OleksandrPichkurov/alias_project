@@ -36,8 +36,8 @@ $ sudo nano local_settings.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'database_name',
-        'USER': 'test_user',
+        'NAME': 'dbname',
+        'USER': 'dbuser',
         'PASSWORD': '123456789',
         'HOST': '',
     }
@@ -48,9 +48,10 @@ Create database and user:
 ```
 $ sudo su postgres
 $ psql
-$ CREATE DATABASE database_name;
-$ CREATE USER test_user WITH password '123456789';
-$ GRANT ALL ON DATABASE alias TO test_user;
+$ CREATE DATABASE dbname;
+$ CREATE USER dbuser WITH password '123456789';
+$ GRANT ALL ON DATABASE dbname TO dbuser;
+$ ALTER USER dbuser CREATEDB;
 ```
 Run migration
 ```
