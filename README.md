@@ -17,7 +17,7 @@ and from 2020-01-31​ to 2020-02-05​ (note overlap at 01-31​ ).
 Project is created with:
 * Django==3.0
 * psycopg2-binary==2.8.6
-* psycopg2==2.8.6
+
 
 	
 ## Setup
