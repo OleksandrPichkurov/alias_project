@@ -24,7 +24,7 @@ Project is created with:
 To run this project, install it locally using:
 
 ```
-$ git clone git@github.com:OleksandrPichkurov/Alias_test.git
+$ git clone https://github.com/OleksandrPichkurov/alias_project.git
 $ pip3 install -r requirements.txt
 ```
 In the root folder of the project, create local_settings.py and add settings:
